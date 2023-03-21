@@ -2,60 +2,59 @@
 *,
 :before,
 :after {
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
 }
     
 body {
   color: #ffffff;
-  text-align: center;
   background: linear-gradient(#615dad, #ffc8da);
   margin: 100px;
-  position: relative;
-  display: block;
+  
 }
 
 .flex-container {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    width: 50%;*/
-    border: 5px solid blueviolet;
-    position:absolute;
-    justify-content: center;   
-    padding: none;
+    justify-content: center;
+    align-items:center;    
 }
-.img {
-    width: 100%;
-}
+ img {
+    width: 600px;
+ }
 
 h1 {
     font-family: Lobster;
-    width: 640px;
-    font-size: 36px;
+    width: 600px;
+    font-size: 46px;
+    padding: 40px;
+    padding-bottom: 0%;   
 }
 
 p, h1 {
     background-color: #283e50;
-    width: 640px;
+    text-align: center;
+    width: 600px;
+    margin: 0px;    
 }
 
 p   {
     font-size: 24px;
+    padding: 30px 20px 30px 20px;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
     font-size: 24px;
-}
-
-.link {
-    width: 100%;
+    display: block;
+    text-align: center;
+    width: 600px;
+    padding: 20px;  
 }
 
 .pravidla {
     color:#ffffff;
-    background-color: #1fcca4;
-    
+    background-color: #1fcca4;   
 }
 
 .hra {
