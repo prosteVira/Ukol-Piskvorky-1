@@ -1,46 +1,49 @@
-
 *,
 :before,
 :after {
-  box-sizing: border-box; 
+    box-sizing: border-box;
 }
-    
+
 body {
-  color: #ffffff;
-  background: linear-gradient(#615dad, #ffc8da);
-  margin: 100px;
-  
+    background: linear-gradient(#615dad, #ffc8da);
+    margin: 100px 0 250px 0;
+    background-attachment: fixed;
+    
+
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;    
+    align-items: center;
+    color: #ffffff;
 }
- img {
+
+img {
     width: 600px;
     border-radius: 20px 20px 0 0;
- }
+}
 
 h1 {
-    font-family: Lobster;
+    font-family: Lobster, cursive;
     width: 600px;
     font-size: 46px;
     padding: 40px;
-    padding-bottom: 0%;   
+    padding-bottom: 0%;
 }
 
-p, h1 {
+p,
+h1 {
     background-color: #283e50;
     text-align: center;
     width: 600px;
-    margin: 0px;    
+    margin: 0px;
 }
 
-p   {
+p {
     font-size: 24px;
-    padding: 30px 20px 30px 20px;
+    padding: 40px 30px 40px 30px;
     line-height: 1.5;
 }
 
@@ -50,25 +53,24 @@ a {
     display: block;
     text-align: center;
     width: 600px;
-    padding: 20px;  
+    padding: 20px;
 }
 
 .pravidla {
-    color:#ffffff;
-    background-color: #1fcca4;   
+    color: #ffffff;
+    background-color: #1fcca4;
 }
 
 .hra {
     color: #ffffff;
     background-color: #0197f6;
-    
+
 }
 
 .pravidla:hover {
-    background-color:#1cbb96;
-  }
+    background-color: #1cbb96;
+}
 
-  .hra:hover {
-    background-color:#0090e9;
-  }
-
+.hra:hover {
+    background-color: #0090e9;
+}
