@@ -28,7 +28,7 @@ img {
 h1 {
     font-family: Lobster, cursive;
     width: 600px;
-    font-size: 46px;
+    font-size: 60px;
     padding: 40px;
     padding-bottom: 0%;
 }
@@ -42,14 +42,14 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 28px;
     padding: 40px 30px 40px 30px;
     line-height: 1.5;
 }
 
 a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     display: block;
     text-align: center;
     width: 600px;
