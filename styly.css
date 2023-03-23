@@ -59,6 +59,7 @@ a {
 .pravidla {
     color: #ffffff;
     background-color: #1fcca4;
+    border-bottom: 2px solid rgb(1, 1, 51);
 }
 
 .hra {
