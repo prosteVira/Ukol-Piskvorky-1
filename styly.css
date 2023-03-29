@@ -28,6 +28,7 @@ img {
 h1 {
     font-family: Lobster, cursive;
     width: 600px;
+    font-weight: lighter;
     font-size: 60px;
     padding: 40px;
     padding-bottom: 0%;
