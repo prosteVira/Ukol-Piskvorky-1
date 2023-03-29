@@ -4,17 +4,13 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: 0 0 0 0;
-}
-
 body {
     background: linear-gradient(#615dad, #ffc8da);
-    margin: 80px 300px 150px 650px;
+    margin: auto;
     background-attachment: fixed;
-    max-width: 80vmin   
+    max-width: 80vmin
 }
-    
+
 h1 {
     font-family: Lobster;
     font-size: 120px;
@@ -25,9 +21,8 @@ h1 {
 
 section.topbutton {
     display: flex;
-    justify-content: space-between; 
-   
-  
+    justify-content: space-between;
+
 }
 
 
@@ -38,81 +33,65 @@ p {
     font-weight: bold;
     margin: 15px 0px 0px 0px;
     text-align: left;
-   
+
 }
+
 p.kolo {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 0px 15px 0px;  
-    width: 250zpx;
+    margin: 0px 0px 15px 0px;
+    width: 250px;
     text-align: left;
-    
+
 }
 
-button.domu {
+.home {
     background-color: #1fcca4;
-    padding: 15px 10px 15px 10px;
-    border-radius: 10px 10px 10px 10px; 
-    border: 2px solid #1fcca4;
-}
-button.domu:hover {
-    background-color: #1cbb96; 
-    border: 2px solid  #1cbb96; 
-}
-button.obnovit {
-    background-color: #0197f6;
-    padding: 15px 10px 15px 10px;
+    width: 70px;
+    height: 80px;
     border-radius: 10px 10px 10px 10px;
-    border: 2px solid  #0197f6;
+    padding: 15px 10px 15px 10px;
 }
 
-button.obnovit:hover {
-    background-color: #0090e9;
-    color: #0090e9;
-    border: 2px solid  #0090e9;
-}
-
-.home {  
-    background-color: #1fcca4;
-    width: 50px;
-    height: 50px;
-}
-    
 .home:hover {
     background-color: #1cbb96;
 }
 
 .restart {
     background-color: #0197f6;
-    width: 50px;
-    height: 50px;
-    
+    width: 70px;
+    height: 80px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 10px 15px 10px;
 }
+
 .restart:hover {
     background-color: #0090e9;
 }
 
 .table {
     flex-wrap: wrap;
-    margin: 40px 0px 0 0px;
-    padding: 0px 0px 0px 0px;
-    
+    margin: 40px 0px 0px 0px;
+    font-size: 0;
+    border: 0,9px solid black;
 }
+
 .cell {
     height: 8vmin;
     width: 8vmin;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     background: rgb(216, 184, 216);
-
 }
+
 .cell:hover {
     background-color: rgb(240, 207, 240);
-  }
+}
+
 .cell:focus {
     background-color: rgb(240, 207, 240);
-  }
+}
