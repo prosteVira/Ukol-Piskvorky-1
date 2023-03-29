@@ -9,6 +9,7 @@ body {
     margin: auto;
     background-attachment: fixed;
     max-width: 80vmin
+
 }
 
 h1 {
@@ -75,7 +76,7 @@ p.kolo {
 
 .table {
     flex-wrap: wrap;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 40px 0px;
     font-size: 0;
     border: 0,9px solid black;
 }
