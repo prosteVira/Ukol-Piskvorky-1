@@ -9,7 +9,7 @@ main {
 }
 body {
     background: linear-gradient(#615dad, #ffc8da);
-    margin: 80px 300px 150px 400px;
+    margin: 80px 300px 150px 650px;
     background-attachment: fixed;
     max-width: 80vmin   
 }
@@ -24,7 +24,8 @@ h1 {
 
 section.topbutton {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+   
   
 }
 
@@ -45,7 +46,7 @@ p.kolo {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px 0px 15px 0px;  
-    width: 200px;
+    width: 250px;
     text-align: left;
     
 }
@@ -95,7 +96,6 @@ button.obnovit:hover {
 
 .table {
     flex-wrap: wrap;
-    
     margin: 40px 0px 0 0px;
     padding: 0px 0px 0px 0px;
     
