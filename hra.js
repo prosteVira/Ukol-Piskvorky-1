@@ -3,20 +3,21 @@
 
 let currentPlayer = 'circle';
 
-const btnElm1 = document.querySelector('button:nth-child(1)');
-const btnElm2 = document.querySelector('button:nth-child(2)');
-const btnElm3 = document.querySelector('button:nth-child(3)');
-const btnElm4 = document.querySelector('button:nth-child(4)');
-const btnElm5 = document.querySelector('button:nth-child(5)');
-const btnElm6 = document.querySelector('button:nth-child(6)');
-const btnElm7 = document.querySelector('button:nth-child(7)');
-const btnElm8 = document.querySelector('button:nth-child(8)');
-const btnElm9 = document.querySelector('button:nth-child(9)');
-const btnElm10 = document.querySelector('button:nth-child(10)');
+const btnElm1 = document.querySelector('#firstbtn');
+const btnElm2 = document.querySelector('#secondbtn');
+const btnElm3 = document.querySelector('#thirdbtn');
+const btnElm4 = document.querySelector('#fourthbtn');
+const btnElm5 = document.querySelector('#fifthbtn');
+const btnElm6 = document.querySelector('#sixthbtn');
+const btnElm7 = document.querySelector('#seventhbtn');
+const btnElm8 = document.querySelector('#eighthbtn');
+const btnElm9 = document.querySelector('#ninthbtn');
+const btnElm10 = document.querySelector('#tenthbtn');
 
-/* najde 3 a 4. bunka*/
 
 const crossOrCircle = (event) => {
+  /*const gamerElm = document.querySelector ('.gamer')*/
+
     if (currentPlayer === 'circle') {
       event.target.classList.add('board__field--circle');
       currentPlayer = 'cross';
@@ -45,6 +46,7 @@ const restart=document.querySelector(`.game-menu-restart `)
 restart.addEventListener(`click`, (event) => {
     if (window.confirm (`Opravdu chceš začít znuvu?`)===true) {
         window.location.reload();
+        event.preventDefault()
     } 
 
 })
