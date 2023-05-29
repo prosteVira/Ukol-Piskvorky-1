@@ -33,7 +33,8 @@ currentPlayerElm.classList.toggle('player-circle');
 
 const field = document.querySelectorAll('.cell');
 const fieldOfCells = Array.from(field);
-//console.log(fieldOfCell)
+console.log(field)
+console.log(fieldOfCells)
 
 
 const gameField = fieldOfCells.map((cell) => {
@@ -58,6 +59,42 @@ if (winner === 'o' || winner === 'x' || winner === 'tie') {
   }, 150);
 }
 //console.log(winner);
+
+ // Ukol 5.
+ const apiMove = (event) => {
+  fetch('https://piskvorky.czechitas-podklady.cz/api/suggest-next-move', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      board: gameField,
+      player: 'x',
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const { x, y } = data.position;
+      const fieldElm = field[x + y * 10];
+      fieldElm.click();
+      //console.log(gameField);
+    });
+};
+
+if (
+  (currentPlayer === cross && winner !== 'o') ||
+  (currentPlayer === cross && winner !== 'x') ||
+  (currentPlayer === cross && winner !== 'tie')
+) {
+  return apiMove();
+};
+
+
+// posluchač na cell:
+document.querySelectorAll('.cell').forEach((element) => {
+element.addEventListener('click', crossOrCircle);
+});
+
 
 
 const restart = (event) => {
