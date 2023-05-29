@@ -136,11 +136,12 @@ a {
 }
 
 .game-menu-home {
+    display: flex;
     background-color: #1fcca4;
-    border-radius: 3px;
+    border-radius: 10px;
     width: 50px;
     height: 50px;
-    padding: 10px 6px 0px 6px;
+    padding: 10px 6px 6px 6px;
     box-shadow: 2px 2px 3px #5b579e;
 }
 
@@ -150,11 +151,12 @@ a {
 }
 
 .game-menu-restart {
+    display: flex;
     background-color: #0197f6;
-    border-radius: 3px;
+    border-radius: 10px;
     width: 50px;
     height: 50px;
-    padding: 10px 6px 0px 6px;
+    padding: 10px 6px 6px 6px;
     box-shadow: 2px 2px 3px #5b579e;
 }
 
@@ -169,7 +171,7 @@ a {
     box-shadow: 2px 2px 3px #666874;
 }
 
-.game-cell {
+.cell {
     height: 8vmin;
     width: 8vmin;
     border: 1px solid black;
@@ -177,8 +179,8 @@ a {
     opacity: 60%;
 }
 
-.game-cell:hover,
-.game-cell:focus {
+.cell:hover,
+.cell:focus {
     background-color: rgb(247, 241, 247);
     cursor: pointer;
     opacity: 70%;
@@ -187,39 +189,38 @@ a {
 
 /* Ukol 3. */
 
-.board__player--circle {
-    height: 26px;
-    width: 20%;
-    border-radius: 75%;
-    border: 3px solid white;
-    display: inline-block;
-    align-self: center;
+.current-player {
+    display: flex;
+    min-width: 2rem;
+    padding: 0px;
+    filter: invert(100%)
   }
   
-  .board__player--cross {
-    height: 26px;
-    width: 20%;
-    display: inline-block;
-    align-self: center;
-   
-    background: 
-      linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, #fff 45%, #fff 55%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 0) 100%) ,
-      linear-gradient(135deg, #7e77ab90 40%, #7e77ab90 43%, #fff 45%, #fff 55%, #7e77ab90 50%, #7e77ab90 90%);
-      
+  .player-circle {
+    background-image: url("./img/circle.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-
-
-.board__field--circle {
-    background-image: url(circle.svg);
-    background-position: 50%;
+  
+  .player-cross {
+    background-image: url("./img/cross.svg");
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+  }
+  
 
-}
-
-.board__field--cross {
-    background-image: url(cross.svg);
-    background-position: 50%;
+  .cell-circle {
+    background-image: url("./img/circle.svg");
+    background-position: center;
+    background-size: 70%;
     background-repeat: no-repeat;
-
-
-}
+  }
+  
+  .cell-cross {
+    background-image: url("./img/cross.svg");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
